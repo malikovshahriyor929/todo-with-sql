@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec node --loader ts-node/esm src/index.ts",
     "start": "node dist/index.js",
-    "build": "tsc"
+    "build": "tsc && cpx \"prisma/**\" dist/",
+    "postinstall": "npm run build",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,7 @@
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.10",
+    "cpx": "^1.5.0",
     "i": "^0.3.7",
     "npm": "^11.4.2",
     "prisma": "^6.11.0",
