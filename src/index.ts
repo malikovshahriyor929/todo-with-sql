@@ -2,7 +2,8 @@ import express from "express";
 import PostRouter from "./routers/post.route.js";
 // import { PrismaClient } from "./generated/prisma/index.js";
 // const prisma = new PrismaClient();
-
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 app.use(express.json());
 
