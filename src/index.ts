@@ -13,7 +13,7 @@ const port = process.env.PORT || 4000;
 
 const connectionStarter = () => {
   try {
-    app.listen(port, () => console.log("Server is running on port "));
+    app.listen(port, () => console.log(`✅ Server is running on port ${port}`));
   } catch (error) {
     console.error("error starting server:", error);
   }
