@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../generated/prisma/index.js";
 
 import postService from "../services/post.service.js";
 
