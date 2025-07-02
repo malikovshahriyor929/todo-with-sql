@@ -11,7 +11,7 @@
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
     /* Language and Environment */
-    "target": "es2020" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "target": "es2022" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "libReplacement": true,                           /* Enable lib replacement. */
@@ -26,8 +26,8 @@
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
 
     /* Modules */
-    "module": "NodeNext", // 👈 muhim
-    "moduleResolution": "NodeNext",
+    "module": "ESNext", // 👈 muhim
+    "moduleResolution": "node",
     // "module": "commonjs" /* Specify what module code is generated. */,
     "rootDir": "./src",
     "outDir": "./dist",
@@ -114,6 +114,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": ["src/**/*", "src", "src/generated"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
