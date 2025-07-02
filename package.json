@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon --watch src --ext ts --exec node --loader ts-node/esm src/index.ts",
-    "start": "node dist",
+    "start": "node ./src",
     "build": "tsc"
   },
   "keywords": [],
