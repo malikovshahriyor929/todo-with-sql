@@ -9,9 +9,11 @@ app.use(express.json());
 
 app.use("/api", PostRouter);
 
+const port = process.env.PORT || 4000;
+
 const connectionStarter = () => {
   try {
-    app.listen(3000, () => console.log("Server is running on port "));
+    app.listen(port, () => console.log("Server is running on port "));
   } catch (error) {
     console.error("error starting server:", error);
   }
